@@ -46,7 +46,7 @@ while True:
     if exit_command == "N":
         break
 
-with open("my_order.txt", "w") as file:
+with open("my_order.txt", "w", encoding='UTF-8') as file:
     for client in list_clients:
         file.write("index:" + str(client.client_index)+"\n")
         file.write("name:" + client.name+"\n")
